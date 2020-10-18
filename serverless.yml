@@ -26,6 +26,11 @@ provider:
 
 plugins:
   - serverless-offline
+  - serverless-plugin-include-dependencies
+
+package:
+  exclude:
+    - node_modules/** # no need to add this yourself, this plugin does it for you
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
